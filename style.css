@@ -1,27 +1,183 @@
 body, html{
-    margin:0%;
+    margin:0;
+    padding: 0;
     height: 100%;
     width: 100%;
-    padding: 0;
     font-family: Tahoma;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.header{
+header{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 209, 209);
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+ul, li, a{
+    list-style:none;
+    display: inline;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/****** MENU *******/
+li{
+    padding-left: 40px;
+}
+
+a:hover{
+    color: #35a0af;
+    border-bottom: 3px #7FAD39 solid;
+    padding-bottom: 10px;
+}
+
+#home{
+    width: 100%;
+    height: 500px;
+    background: url("/cordel2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.menu{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(13, 12, 14, 0.808);
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.menu:hover{
+    background-color: rgba(13, 12, 14, 0.925);
+}
+
+ul{ 
+    padding: 0;
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display:flex;
+    justify-content:center;
+}
+
+/***** BOTÃO *******/
+
+.backbotao{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    float: left;
+    background-color: rgb(255, 0, 0);
+}
+
+#botao{
+    border: none;
+    top: 550px;
+    left: 1230px;
+    position: fixed;
+    float: left;
+    color: rgb(245, 245, 245);
+    width: 65px;
+    height: 65px;
+    background-color: rgba(126, 173, 57, 0.219);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#botao:hover{
+    transform: scale(1.2);
+    background-color: rgb(126, 173, 57);
+}
+
+#botaotop:hover{
+    border: none;
+    color: whitesmoke;
+}
+
+#botaotop > a{
+    padding: 30px;
+}
+
+/***** MISSÃO *******/
+#nossamissao{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.missao{
+    width: 70%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #FFFFFF;
+    color: #110111;
+}
+
+.frase{
+    width: 40%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #7FAD39;
+    color: #110111;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#missaoicons{
+    width: 100%;
+    height: 230px;
+    background-color: #35a0af;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#title{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+}
+
+.prof{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    cursor:pointer;
+}
+
+.prof > p{
+    padding-left: 10px;
+    
+}
+
+.prof:hover{
+    transform: scale(1.1);
+}
+
+.projetos{
     display: flex;
     flex-direction: row;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.triangle{
-    height: 0;
-    width: 0;
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-    border-left: 14px solid #35A0AF;
-    margin-bottom:5px;
 }
 
 .subtitle{
