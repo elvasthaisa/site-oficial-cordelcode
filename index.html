@@ -28,10 +28,12 @@
         <span id="topo"></span>
         </header>
 
-        <!--    SESSÃO DA NOSSA MISSÃO     -->
+        <!--    SEÇÃO DA NOSSA MISSÃO     -->
         <section id="nossamissao">
             <div class="missao">
-            <h2><i class='fas fa-play'></i> Cordel Code</h2>
+                <div class="subtitulo">
+                    <div class="seta-verde"><p class="fas fa-play"></i></div></p><div class="subtitle"> CORDEL CODE</div>
+                </div>
             <p>
             O Cordel Code nasceu com a proposta de propagar conhecimento como uma forma de fortalecer e emponderar mulheres. Tornando-as mais preparadas ao mercado de trabalho, onde o grupo discute, faz exercícios propostos por elas mesmas, num ambiente favorável ao desenvolvimento intelectual.
             Proporcionando assim a qualificação profissional de mulheres de diversas áreas do conhecimento, sendo ligadas a áreas de tecnologias ou não, em desenvolvedoras de Front-End.
@@ -48,16 +50,17 @@
                     </p>
                     <p text-align="left">- Confúcio </p>
                 </div>
-                </section>
+        </section>
 
             <!--    NOSSA MISSÃO     -->
             <section id="nossamissao">
             <div class="missao" id="missaoicons">
-                <div id="title">
-                    <h2><i class='fas fa-play'></i> Nossa Missão</h2>
-                </div>
-
+                    <div id="title">
+                        <h2><p class='fas fa-play'></p>NOSSA MISSÃO</h2>
+                    </div>
+                
                 <!--   ÍCONES     -->
+                <div>
                     <div class="prof">
                         <i class='fas fa-user-graduate' style='font-size:36px'></i>
                         <p>Qualificação Profissional</p>
@@ -75,10 +78,13 @@
                         <p>Desenvolvimento WEB</p>
                     </div>
                 </div>
+            </div>
             </section>
 
         <section id="projetos">
-            <div class="subtitle"><i class='fas fa-play'></i>PROJETOS</div>
+            <div class="container">
+                <div class="subtitle"><i class='fas fa-play'></i>PROJETOS</div>
+            </div>
             <div class="mother">
                 <div class="card">
                     <div class="photo"><img src="formulario.jpeg"/></div>
@@ -105,9 +111,9 @@
             </div>
         </section>
 
-        <section id="conhecimentos">
+        <section class="conhecimentos">
             <div class="container1">
-                <div class="titulos"><i class='fas fa-play'></i>CONHECIMENTOS</div>
+                <div class="subtitle"><i class='fas fa-play'></i>CONHECIMENTOS</div>
             </div>
             <div class="container2">
                 <div class="conhecimento">
@@ -151,11 +157,49 @@
         </section>
 
         <section id="grupo">
-            <div><i class='fas fa-play'></i> Grupo</div>
+            <div><i class='fas fa-play'></i> GRUPO</div>
         </section>
 
         <section id="contato">
-            <div><i class='fas fa-play'></i> Contato</div>
+            <div class="subtitle-white"><i class='fas fa-play'></i> CONTATO</div>
+            <div class="contact__content">
+                <figure class="contact__figure">
+                    <img class="contact__img" src="./contato_pc.jpg" alt="mulher bebendo café enquanto trabalha no computador" title="Contato"></figure>
+                <form class="form">
+                    <p>Fale com a gente!</p>
+                    <div class="form__field">
+                        <div class="form__label-group">
+                            <label class="form__label" for="name">Nome</label>
+                            <span class="form__require">*</span></div>
+                        <input class="form__input" id="name" type="text" required="" name="name" placeholder="Nome">
+                        <span class="form__validate"></span>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__label-group">
+                            <label class="form__label" for="email">E-mail</label>
+                            <span class="form__require">*</span></div>
+                        <input class="form__input" id="email" type="email" name="email" required="" placeholder="E-mail">
+                        <span class="form__validate"></span>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__label-group">
+                            <label class="form__label" for="subject">Assunto</label>
+                            <span class="form__require">*</span>
+                        </div>
+                        <input class="form__input" id="subject" type="text" name="subject" required="" placeholder="Assunto">
+                        <span class="form__validate"></span>
+                    </div>
+                    <div class="form__field">
+                        <div class="form__label-group">
+                            <label class="form__label" for="message">Mensagem</label>
+                            <span class="form__require">*</span>
+                        </div>
+                        <span class="form__validate"></span>
+                        <textarea cols="40" rows="5" id="message" class="form__textarea"  name="message" required="" data-gramm="false" placeholder="Mensagem"></textarea>
+                    </div>
+                    <input class="form__submit" id="submit" type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
 
         <footer id="rodape">
