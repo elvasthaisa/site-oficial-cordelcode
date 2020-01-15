@@ -239,7 +239,7 @@ padding:50px;
 }
 
 .subtitle{
-    font-size: 16pt;
+    font-size: 17pt;
     color: #35A0AF;
     font-weight: bold;
     margin-top: 5px;
@@ -321,7 +321,7 @@ img{
 
 .conhecimento{
     margin:10px;
-    font-size:12pt;
+    font-size:18pt;
     /*width:20vw;*/
     display:flex;
     flex-direction: column;
@@ -339,6 +339,21 @@ img{
     margin-top:10px;
 }
 
+.container__conhecimentos2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container__conhecimentos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.conhecimentos-size{
+    width: 180px;
+    height: 180px;
+}
+
 /***** GRUPO *******/
 .menu_grupo{
     height: 100px;
@@ -350,22 +365,27 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 i{
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .cartao{
-    height: 120px;
+    /* height: 120px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 80px; */
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+    margin: 70px;
+
+}
+
+.cartao2{
+    display: flex;
+    justify-content: space-evenly;
+    margin:70px;
 }
 
 .team__cartao__img {
@@ -398,9 +418,19 @@ h3 {
     font-weight: bold;
 }
 
+h1{
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.seta-icon{
+    margin: 0;
+}
+
+
 /***** CONTATO *******/
 #contato {
-    width: 92, 5%;
+    width: 100%;
     padding: 20px;
     font-family: Tahoma, sans-serif;
     background-color: #35A0AF;
