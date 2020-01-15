@@ -1,6 +1,6 @@
-body, html{
-    margin:0;
-    padding: 0;
+html{
+    margin:0%;
+    padding: 0%;
     height: 100%;
     width: 100%;
     font-family: Tahoma;
@@ -31,7 +31,7 @@ li{
 }
 
 a:hover{
-    color: #35a0af;
+    color: #35A0AF;
     border-bottom: 3px #7FAD39 solid;
     padding-bottom: 10px;
 }
@@ -39,7 +39,7 @@ a:hover{
 #home{
     width: 100%;
     height: 500px;
-    background: url("/cordel2.jpg");
+    background: url("cordel2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
@@ -59,7 +59,7 @@ a:hover{
 }
 
 .menu:hover{
-    background-color: rgba(13, 12, 14, 0.925);
+    background-color: rgba(13, 12, 14, 0.865);
 }
 
 ul{ 
@@ -112,15 +112,8 @@ ul{
     padding: 30px;
 }
 
-/***** MISSÃO *******/
-#nossamissao{
-    width: 100%;
-    display:flex;
-    justify-content: center;
-
-}
-
-.missao{
+/***** APRESENTAÇÃO *******/
+.apresentacao{
     width: 70%;
     padding-left: 30px;
     padding-right: 30px;
@@ -153,26 +146,39 @@ ul{
     align-items: center;
 }
 
-#missaoicons{
+.cordelcode {
     width: 100%;
-    height: 230px;
-    background-color: #35a0af;
+    display:flex;
+    justify-content: center;
+
+}
+
+/***** MISSÃO *******/
+#nossamissao, .icons{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+
+}
+
+.missao, .topicos{
+    width: 100%;
+    height: 120px;
+    background-color: #35A0AF;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#title{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content:center;
+.title{
+    margin-left: 10px;
 }
 
+/***** ÍCONES *******/
 .prof{
     display: flex;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     cursor:pointer;
 }
 
@@ -185,6 +191,7 @@ ul{
     transform: scale(1.1);
 }
 
+/***** PROJETOS *******/
 .container{
     display: flex;
     flex-direction: row;
@@ -237,6 +244,7 @@ img{
     margin: 0 0 20px;
 }
 
+/***** CONHECIMENTOS *******/
 .container1{
     color:#35A0AF; 
     font-weight: bold ;
@@ -274,10 +282,71 @@ img{
     width: 20px;
     height: 20px;
 }
+
 .assunto{
     margin-top:10px;
 }
 
+/***** GRUPO *******/
+.menu_grupo{
+    height: 100px;
+    width: 100%;
+    background-color: #7FAD39;
+    font-size: 20px;
+    font-family: tahoma;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+i{
+    padding: 15px;
+}
+
+.cartao{
+    height: 120px;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.team__cartao__img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 80%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.team__cartao__title {
+    color: var(--dark-primary-color);
+    font: 500 22px tahoma,sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/***** CONTATO *******/
 #contato {
     width: 92, 5%;
     padding: 20px;
@@ -334,7 +403,6 @@ input{
     font-weight: bold;
     font-size: 18px;
     transition: 1s all;
-    
 }
 
 #submit:hover{
