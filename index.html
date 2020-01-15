@@ -9,21 +9,21 @@
     </head>
 
     <body>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#nossamissao">Nossa Missão</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#grupo">Grupo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
         <header id="home">
-            <!--     MENU     -->
-            <nav class="menu">
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#nossamissao">Nossa Missão</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#grupo">Grupo</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <div>
-                    <img class="logo" src="logo1.jpeg" width="200" height="90">
+            <div class="container__background-filter">
+                <div class="container__background">
+                    <img class="logo" src="./assets/logo1.jpeg" width="200" height="90">
                 </div>
-            </nav>
-            
+            </div>            
             <span id="topo"></span>
         </header>
 
@@ -31,7 +31,7 @@
         <section class="cordelcode">
             <div class="apresentacao">
                 <div class="subtitulo">
-                    <div class="seta-verde"><p class="fas fa-play"></i></div></p><div class="subtitle"> CORDEL CODE</div>
+                    <p class="fas fa-play seta-verde"></i></p><div class="subtitle"> CORDEL CODE</div>
                 </div>
             <p>
             O Cordel Code nasceu com a proposta de propagar conhecimento como uma forma de fortalecer e emponderar mulheres. Tornando-as mais preparadas ao mercado de trabalho, onde o grupo discute, faz exercícios propostos por elas mesmas, num ambiente favorável ao desenvolvimento intelectual.
@@ -44,10 +44,10 @@
             <!--    FRASE     -->
             <div class="frase">
                     
-                <p><i class="fa fa-quote-left" style="font-size:30px"></i> 
+                <p><i class="fa fa-quote-left " style="font-size:30px"></i> 
                     A essência do conhecimento consiste em aplicá-lo, uma vez possuído.
                 </p>
-                <p text-align="left">- Confúcio </p>
+                <p class="autor" text-align="left">- Confúcio </p c>
             </div>
         </section>
 
@@ -58,29 +58,31 @@
                     <h2><p class='fas fa-play'></p>NOSSA MISSÃO</h2>
                 </div>
             </div>
-        </section>   
+         
 
         <!--   ÍCONES     -->
-        <section class="icons">
+        <div class="icons">
             <div class="topicos">
                 <div class="prof">
-                    <i class='fas fa-user-graduate' style='font-size:36px'></i>
+                    <i class='fas fa-user-graduate' id="icons__size" style='font-size:36px'></i>
                     <p>Qualificação Profissional</p>
                 </div>
                 <div class="prof">
-                    <i class='fas fa-users' style='font-size:36px'></i>
+                    <i class='fas fa-users' id="icons__size" style='font-size:36px'></i>
                     <p>Empoderamento</p>
                 </div>
                 <div class="prof">
-                    <i class='far fa-comments' style='font-size:36px'></i>
+                    <i class='far fa-comments' id="icons__size" style='font-size:36px'></i>
                     <p>Compartilhar conhecimento</p>
                 </div>
                 <div class="prof">
-                    <i class='fas fa-code' style='font-size:36px'></i>
+                    <i class='fas fa-code' id="icons__size" style='font-size:36px'></i>
                     <p>Desenvolvimento WEB</p>
                 </div>
             </div>
+        </div>
         </section>
+    
 
         <!--    PROJETOS     -->
         <section id="projetos">

@@ -1,22 +1,25 @@
-html{
-    margin:0%;
-    padding: 0%;
-    height: 100%;
-    width: 100%;
-    font-family: Tahoma;
-    padding-left: 50px;
-    padding-right: 50px;
+*{
+    box-sizing: border-box;
+     margin: 0 auto;
 }
 
-header{
+html{
+   
+    font-family: Tahoma;
+}
+
+/* header{
+    width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(209, 209, 209);
+    background-image: url('./assets/cordel2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: whitesmoke;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
-}
+} */
 
 ul, li, a{
     list-style:none;
@@ -26,6 +29,19 @@ ul, li, a{
 }
 
 /****** MENU *******/
+
+.container__background{
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+
+.container__background-filter{
+    background-color:  rgba(13, 12, 14, 0.808);
+    width: 100%;
+}
+
 li{
     padding-left: 40px;
 }
@@ -38,10 +54,12 @@ a:hover{
 
 #home{
     width: 100%;
-    height: 500px;
-    background: url("cordel2.jpg");
+    height: 550px;
+    background-image: url("./assets/cordel2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-color: (13, 12, 14, 0.808);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -50,12 +68,11 @@ a:hover{
 
 .menu{
     width: 100%;
-    height: 500px;
     background-color: rgba(13, 12, 14, 0.808);
     display: flex;
     justify-content:center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    position: fixed;
+
 }
 
 .menu:hover{
@@ -63,12 +80,11 @@ a:hover{
 }
 
 ul{ 
+    text-align: center;
     padding: 0;
     margin-top: 30px;
     width: 100%;
     height: 50px;
-    display:flex;
-    justify-content:center;
 }
 
 /***** BOTÃO *******/
@@ -115,24 +131,25 @@ ul{
 /***** APRESENTAÇÃO *******/
 .apresentacao{
     width: 70%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 60px;
     background-color: #FFFFFF;
     color: #110111;
 }
 
 .subtitulo{
-    display: flex;
-    align-items: center;
-    margin: 0;
+    display: inline-flex;
+    margin-bottom: 40px;
 }
 
 .seta-verde{
     color: #7FAD39;
     font-size: 16pt;
+    margin-top: 8px;
+
 }
 
 .frase{
+    font-weight: bold;
     width: 40%;
     padding-left: 30px;
     padding-right: 30px;
@@ -153,11 +170,29 @@ ul{
 
 }
 
+.fa {
+color: white;
+
+}
+
+.autor{
+    margin-top: 20px;
+}
+
 /***** MISSÃO *******/
-#nossamissao, .icons{
-    width: 100%;
-    display:flex;
-    justify-content: center;
+
+#nossamissao{
+color: white;
+background-color:  #35A0AF ;
+padding:50px;
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+#nossamissao > .icons{
+    width: 100%;   
 
 }
 
@@ -166,7 +201,7 @@ ul{
     height: 120px;
     background-color: #35A0AF;
     display: flex;
-    flex-wrap: wrap;
+    padding-bottom: 40px;
     justify-content: space-around;
 }
 
@@ -176,19 +211,23 @@ ul{
 
 /***** ÍCONES *******/
 .prof{
-    display: flex;
-    align-items: center;
+    text-align: center;
     padding-bottom: 20px;
     cursor:pointer;
 }
 
 .prof > p{
-    padding-left: 10px;
+    padding-left: 17px;
+    font-size: 17px;
     
 }
 
 .prof:hover{
     transform: scale(1.1);
+}
+
+#icons__size{
+    width: 50px;
 }
 
 /***** PROJETOS *******/
@@ -217,7 +256,7 @@ ul{
 }
 
 .card{
-    *margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .card .photo{
@@ -228,7 +267,8 @@ ul{
 }
 
 img{
-    height: 200px;
+    margin-top: 70px;
+    height: 171px;
     width: 300px;
 }
 
