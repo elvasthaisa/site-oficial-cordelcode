@@ -1,22 +1,25 @@
-html{
-    margin:0%;
-    padding: 0%;
-    height: 100%;
-    width: 100%;
-    font-family: Tahoma;
-    padding-left: 50px;
-    padding-right: 50px;
+*{
+    box-sizing: border-box;
+     margin: 0 auto;
 }
 
-header{
+html{
+   
+    font-family: Tahoma;
+}
+
+/* header{
+    width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(209, 209, 209);
+    background-image: url('./assets/cordel2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: whitesmoke;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
-}
+} */
 
 ul, li, a{
     list-style:none;
@@ -26,6 +29,19 @@ ul, li, a{
 }
 
 /****** MENU *******/
+
+.container__background{
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+
+.container__background-filter{
+    background-color:  rgba(13, 12, 14, 0.808);
+    width: 100%;
+}
+
 li{
     padding-left: 40px;
 }
@@ -38,10 +54,12 @@ a:hover{
 
 #home{
     width: 100%;
-    height: 500px;
-    background: url("cordel2.jpg");
+    height: 550px;
+    background-image: url("./assets/cordel2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-color: (13, 12, 14, 0.808);
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -50,12 +68,11 @@ a:hover{
 
 .menu{
     width: 100%;
-    height: 500px;
     background-color: rgba(13, 12, 14, 0.808);
     display: flex;
     justify-content:center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    position: fixed;
+
 }
 
 .menu:hover{
@@ -63,12 +80,11 @@ a:hover{
 }
 
 ul{ 
+    text-align: center;
     padding: 0;
     margin-top: 30px;
     width: 100%;
     height: 50px;
-    display:flex;
-    justify-content:center;
 }
 
 /***** BOTÃO *******/
@@ -115,24 +131,25 @@ ul{
 /***** APRESENTAÇÃO *******/
 .apresentacao{
     width: 70%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 60px;
     background-color: #FFFFFF;
     color: #110111;
 }
 
 .subtitulo{
-    display: flex;
-    align-items: center;
-    margin: 0;
+    display: inline-flex;
+    margin-bottom: 40px;
 }
 
 .seta-verde{
     color: #7FAD39;
     font-size: 16pt;
+    margin-top: 8px;
+
 }
 
 .frase{
+    font-weight: bold;
     width: 40%;
     padding-left: 30px;
     padding-right: 30px;
@@ -153,11 +170,29 @@ ul{
 
 }
 
+.fa {
+color: white;
+
+}
+
+.autor{
+    margin-top: 20px;
+}
+
 /***** MISSÃO *******/
-#nossamissao, .icons{
-    width: 100%;
-    display:flex;
-    justify-content: center;
+
+#nossamissao{
+color: white;
+background-color:  #35A0AF ;
+padding:50px;
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+#nossamissao > .icons{
+    width: 100%;   
 
 }
 
@@ -166,7 +201,7 @@ ul{
     height: 120px;
     background-color: #35A0AF;
     display: flex;
-    flex-wrap: wrap;
+    padding-bottom: 40px;
     justify-content: space-around;
 }
 
@@ -176,14 +211,14 @@ ul{
 
 /***** ÍCONES *******/
 .prof{
-    display: flex;
-    align-items: center;
+    text-align: center;
     padding-bottom: 20px;
     cursor:pointer;
 }
 
 .prof > p{
-    padding-left: 10px;
+    padding-left: 17px;
+    font-size: 17px;
     
 }
 
@@ -191,16 +226,20 @@ ul{
     transform: scale(1.1);
 }
 
+#icons__size{
+    width: 50px;
+}
+
 /***** PROJETOS *******/
 .container{
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .subtitle{
-    font-size: 16pt;
+    font-size: 17pt;
     color: #35A0AF;
     font-weight: bold;
     margin-top: 5px;
@@ -217,24 +256,31 @@ ul{
 }
 
 .card{
-    *margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-.card .photo{
-    height: 200px;
-    width: 300px;
-    border: 2px solid;
-    border-color: #111011;
+.photo{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 img{
-    height: 200px;
+    margin-top: 70px;
+    height: 171px;
     width: 300px;
+}
+
+.imagem__desafio{
+    height: 280px;
+    width: 450px;
+    border: 2px solid;
+    border-color: #111011
 }
 
 .card .title{
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     font-weight: bold;
 }
 
@@ -242,6 +288,12 @@ img{
     width: 300px;
     color: #111011;
     margin: 0 0 20px;
+}
+
+.container__projetos{
+    width: 100%;
+    justify-content: space-around;
+    display: flex
 }
 
 /***** CONHECIMENTOS *******/
@@ -269,7 +321,7 @@ img{
 
 .conhecimento{
     margin:10px;
-    font-size:12pt;
+    font-size:18pt;
     /*width:20vw;*/
     display:flex;
     flex-direction: column;
@@ -287,6 +339,21 @@ img{
     margin-top:10px;
 }
 
+.container__conhecimentos2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container__conhecimentos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.conhecimentos-size{
+    width: 180px;
+    height: 180px;
+}
+
 /***** GRUPO *******/
 .menu_grupo{
     height: 100px;
@@ -298,22 +365,27 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 i{
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .cartao{
-    height: 120px;
+    /* height: 120px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 80px; */
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+    margin: 70px;
+
+}
+
+.cartao2{
+    display: flex;
+    justify-content: space-evenly;
+    margin:70px;
 }
 
 .team__cartao__img {
@@ -346,9 +418,19 @@ h3 {
     font-weight: bold;
 }
 
+h1{
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.seta-icon{
+    margin: 0;
+}
+
+
 /***** CONTATO *******/
 #contato {
-    width: 92, 5%;
+    width: 100%;
     padding: 20px;
     font-family: Tahoma, sans-serif;
     background-color: #35A0AF;
@@ -383,13 +465,14 @@ input{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 60px;
 }
 
 .contact__figure {
     margin: 0;
     width: 40%;
     height: 35%;
-    padding: 0 0 30px 0;
+    margin: 0;
 }
 
 #submit{
@@ -409,14 +492,55 @@ input{
     cursor: pointer;
 }
 
+.subtitle-white{
+    text-align: center;
+    
+}
+
+h2{
+    text-align: center;
+    margin: 40px;
+}
+
 @media (min-width: 1020px) {
     .contact__figure {
         padding: 0 0px 0px 0;
     }
 }
 
+.apoio_{
+    text-align: center;
+}
+
+.cesarschool{
+ width: 400px;
+ height: 293px;
+ margin-top: 0;
+}
+.cesar{
+    margin-top: 0;
+    margin-bottom: 75px;
+}
 .contact__img {
-    width: 90%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 40px;
+    margin: 0;
+}
+
+footer{
+background-color:#110111;;
+height: 50px;
+padding-top: 20px;
+
+}
+
+
+footer > p{
+color: white;
+font-size: 12px;
+text-align: center;
+
+
 }
